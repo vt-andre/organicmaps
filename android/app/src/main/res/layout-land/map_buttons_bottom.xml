@@ -10,9 +10,9 @@
   android:clipToPadding="false">
   <include
     layout="@layout/map_buttons_help"
+    android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:visibility="gone"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintStart_toStartOf="parent" />
   <include
@@ -31,9 +31,9 @@
     app:layout_constraintStart_toEndOf="@+id/btn_search" />
   <include
     layout="@layout/map_buttons_menu"
+    android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:visibility="gone"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,11 +9,11 @@
   tools:context=".editor.EditorActivity"
   tools:ignore="DuplicateIds">
   <LinearLayout
+    android:visibility="gone"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/margin_half"
-    android:orientation="vertical"
-    android:visibility="gone">
+    android:orientation="vertical">
     <TextView
         android:id="@+id/osm_info"
         android:layout_width="match_parent"

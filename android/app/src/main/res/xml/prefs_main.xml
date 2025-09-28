@@ -13,7 +13,8 @@
   <androidx.preference.PreferenceCategory
     android:key="@string/pref_settings_general"
     android:title="@string/prefs_group_general"
-    android:order="2">
+    android:order="2"
+    app:isPreferenceVisible="false">
     <ListPreference
       android:key="@string/pref_munits"
       android:title="@string/measurement_units"
@@ -119,7 +120,8 @@
   <androidx.preference.PreferenceCategory
     android:key="@string/pref_navigation"
     android:title="@string/prefs_group_route"
-    android:order="3">
+    android:order="3"
+    app:isPreferenceVisible="false">
     <ListPreference
       android:key="@string/pref_map_style"
       android:title="@string/pref_map_style_title"
@@ -157,7 +159,8 @@
   <androidx.preference.PreferenceCategory
     android:key="@string/pref_privacy"
     android:title="@string/privacy"
-    android:order="6">
+    android:order="6"
+    app:isPreferenceVisible="false">
     <SwitchPreferenceCompat
       android:key="@string/pref_play_services"
       android:title="@string/google_play_services"

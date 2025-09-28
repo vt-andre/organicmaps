@@ -35,6 +35,7 @@ import app.organicmaps.sdk.util.ConnectionState;
 import app.organicmaps.sdk.util.log.Logger;
 import app.organicmaps.util.ThemeSwitcher;
 import app.organicmaps.util.Utils;
+import app.organicmaps.util.MapsBootstrap;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 
@@ -127,6 +128,8 @@ public class MwmApplication extends Application implements Application.ActivityL
   {
     super.onCreate();
     Logger.i(TAG, "Initializing application");
+
+    new Thread(() -> MapsBootstrap.copyMaps(this)).start();
 
     sInstance = this;
 
